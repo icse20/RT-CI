@@ -1,0 +1,5 @@
+This folder contains the implementation of the algorithms and the code needed to run the experiments, with the corresponding datasets. 
+
+The "test selection" folder contains the code to run the test selection part (namely: download the commits, extract the metrics, update the dependency graph based on the changed code, retrieve the test classes depending on the changed classes, and create the dataset with each row being a test class and columns being the metrics related to the corresponding class(es) under test) 
+
+The "test prioritization" folder contains the code to run test prioritization on the selected tests at each commit. It has three subfolders, depending on the prioritization algorithm (see the paper for more details): one for KNN, RF and RL-RF, whose implementation is in Knime (a front-end for Weka); one for RL and RL-MLP, implemented in Python; one for LTR apraoches implemented by using RankLib. These require slighlty different formats of input data, hence the datasets are replicated within each subfolder. 
