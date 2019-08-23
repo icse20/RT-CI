@@ -64,4 +64,6 @@ For the Static Random Forest and kNN approaches
 | io       | 51 - 386   |  502          |
 | lang     | 23 - 520   |  512          |
 | math     | 8 - 111    |  618          |
- ----------------------------------------
+ ---------------------------------------
+
+NB.: in the case of static approaches the repetitions must be performed manually
