@@ -1,6 +1,6 @@
 # Learning-to-Rank vs Ranking-to-Learn: Strategies for Regression Testing in Continuous Integration
 
-This repository is a companion page for a research paper submitted to the 42nd International Conference on Software Engineering ([ICSE'20](https://conf.researchr.org/home/icse-2020)). It contains all the material required for replicating our experiments, including: the implementation of the algorithms (along with supplementary tools), the input data, and the obtained results. Some additional results, not included in the paper for the sake of space, are also provided ("SupplementalMaterial.pdf").
+This repository is a companion page for a research paper submitted to the 42nd International Conference on Software Engineering ([ICSE'20](https://conf.researchr.org/home/icse-2020)). It contains all the material required for replicating our experiments, including: the implementation of the algorithms (along with supplementary tools), the input data, and the obtained results. Some additional results, not included in the paper for the sake of space, are also provided as a [Supplemental Material](https://github.com/icse20/RT-CI/blob/master/results/SupplementalMaterial.pdf).
 
 Experiment Replication
 ---------------
