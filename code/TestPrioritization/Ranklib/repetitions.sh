@@ -2,7 +2,7 @@
 dataset=$1
 typology="normal"
 
-repetitions=30
+repetitions=1
 
 echo "The chosen dataset is ${dataset}"
 echo "The number of repetitions is ${repetitions}"
@@ -22,7 +22,7 @@ do
 
         #test
         time0=$(gdate +%s%N)
-        java -jar RankLib-2.12.jar -load ${typology}/${dataset}/model_${repetition}_${dataset}_ranker${ranker}.txt -rank ${typology}/${dataset}/sources_relevance/test.txt -score ${typology}/${dataset}/${dataset}Score_${repetition}_ranker${ranker}.txt
+        java -jar RankLib-2.12.jar -load ${typology}/${dataset}/model_${repetition}_${dataset}_ranker${ranker}.txt -rank ${typology}/${dataset}/sources_relevance/test2000.txt -score ${typology}/${dataset}/${dataset}Score_${repetition}_ranker${ranker}.txt
         time1=$(gdate +%s%N)
         echo $((${time1}-${time0})) >> test_time_ranker${ranker}.txt
         ;;
@@ -37,7 +37,7 @@ do
 
         #test
         time0=$(gdate +%s%N)
-        java -jar RankLib-2.12.jar -load ${typology}/${dataset}/model_${repetition}_${dataset}_ranker${ranker}.txt -rank ${typology}/${dataset}/sources_relevance/test.txt -score ${typology}/${dataset}/${dataset}Score_${repetition}_ranker${ranker}.txt -metric2T NDCG@10
+        java -jar RankLib-2.12.jar -load ${typology}/${dataset}/model_${repetition}_${dataset}_ranker${ranker}.txt -rank ${typology}/${dataset}/sources_relevance/test2000.txt -score ${typology}/${dataset}/${dataset}Score_${repetition}_ranker${ranker}.txt -metric2T NDCG@10
         time1=$(gdate +%s%N)
         echo $((${time1}-${time0})) >> test_time_ranker${ranker}.txt
         ;;
@@ -52,7 +52,7 @@ do
 
         #test
         time0=$(gdate +%s%N)
-        java -jar RankLib-2.12.jar -load ${typology}/${dataset}/model_${repetition}_${dataset}_ranker${ranker}.txt -rank ${typology}/${dataset}/sources_relevance/test.txt -score ${typology}/${dataset}/${dataset}Score_${repetition}_ranker${ranker}.txt
+        java -jar RankLib-2.12.jar -load ${typology}/${dataset}/model_${repetition}_${dataset}_ranker${ranker}.txt -rank ${typology}/${dataset}/sources_relevance/test2000.txt -score ${typology}/${dataset}/${dataset}Score_${repetition}_ranker${ranker}.txt
         time1=$(gdate +%s%N)
         echo $((${time1}-${time0})) >> test_time_ranker${ranker}.txt
         ;;
