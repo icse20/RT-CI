@@ -5,7 +5,7 @@ git checkout -b FIRST_TRY                  #crete a new local branch
 git push origin FIRST_TRY                #synchronized with GitHub
 
 while IFS='' read -r line || [[ -n "$line" ]]; do
-cd /Users/romolodevito/Desktop/commons-math
+cd  local/path/to/application_under_test #../../commons-math
     git checkout $line
     git push origin $line:FIRST_TRY --force-with-lease
     echo "$line has been pushed to the github"
